@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;600;800&display=swap');
+
+body{
+    box-sizing: border-box;
+    background-color: floralwhite;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display:grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-template-rows: 1fr, 3 fr, 1fr ;
+
+    grid-template-areas: 
+    "tittle tittle"
+    "container container"
+    "v1 importeTotal";
+}
+
+.titulo{
+    grid-area: tittle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    background-color: burlywood;
+    margin: 0;
+    
+    
+}
+h1{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    text-align: center;
+}
+.container{
+    grid-area: container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.firstContainer {
+    margin: 10px;
+    width: 80%;
+    height: 100%;
+    border: 1px solid burlywood;
+    text-align: left;
+    margin: 10px;
+
+    
+}
+.secondContainer {
+    position: relative;
+    margin: 10px;
+    width: 80%;
+    height: 100%;
+    border: 1px solid burlywood;
+    text-align: left;
+    margin: 10px;
+
+
+}
+.importeTotal{
+    grid-area: importeTotal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;    
+    position: relative;
+}
+tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: last baseline;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+

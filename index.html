@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Argento</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;600;800&display=swap" rel="stylesheet"> 
+</head>
+
+<body onload="crearLista()">
+  
+  <h1 class="titulo">SUPER ARGENTO</h1>
+
+  <div class="container">
+  
+  <div class="firstContainer">
+    <h1>Lista de la Productos</h1>
+    <table >      
+        <thead>
+           <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody  id="listPrice">
+        </tbody>
+    </table>
+  </div>
+
+  <div class="secondContainer">
+    <h1>Carrito de Compras</h1>
+    <table>        
+        <thead>
+          <tr id="carrito">
+            <th>Producto</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody  id="carShop">
+        </tbody>
+    </table> 
+  </div>
+  </div>
+  <div class="importeTotal">
+    <p></p>
+    <button onclick="importeTotal()">Total</button>
+    <button onclick="ceroEnCarro()">Cero</button>
+  </div>
+    
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
+
